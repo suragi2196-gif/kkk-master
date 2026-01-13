@@ -1,6 +1,7 @@
 'use client';
 
-import { plans } from '@/information';
+
+import { plans } from 'information';
 import React, { useState } from 'react';
 
 

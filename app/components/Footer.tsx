@@ -1,5 +1,5 @@
-import { media } from "@/information";
 import { Img } from "@react-email/components";
+import { media } from "information";
 
 export default function Footer() {
     return (

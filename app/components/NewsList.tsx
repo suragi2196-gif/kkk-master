@@ -1,4 +1,5 @@
-import { NewsDates } from '@/information'
+
+import { NewsDates } from 'information';
 import React from 'react'
 const sortedNews = [...NewsDates].sort((a, b) => b.id - a.id);
 const NewsList = () => {

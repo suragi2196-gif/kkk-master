@@ -1,4 +1,4 @@
-import { NewsDates } from '@/information';
+import { NewsDates } from 'information';
 import Link from 'next/link';
 
 

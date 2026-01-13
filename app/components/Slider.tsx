@@ -6,8 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Songs } from "@/information";
 import Link from "next/link";
+import { Songs } from "information";
 
 
 export default function Slider() {
