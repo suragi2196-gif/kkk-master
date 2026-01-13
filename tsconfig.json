@@ -1,5 +1,5 @@
 {
-  "": {
+  "compilerOptions": {
     "target": "ES2017",
     "lib": [
       "dom",
@@ -23,8 +23,9 @@
       }
     ],
     "paths": {
-      "@/": ["./"]
-    }
+          "@/": ["./"]
+        }
+    
   },
   "include": [
     "next-env.d.ts",
