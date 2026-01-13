@@ -2,10 +2,20 @@
 
 import { Resend } from 'resend';
 import { z } from 'zod';
-import * as React from 'react';
+import * as React from 'react'; // Reactのインポートを確認
 import { EmailTemplate } from './email-template';
 
-// --- スキーマ定義は外側でOK ---
+// APIキーの読み込み確認
+const apiKey = process.env.RESEND_API_KEY;
+console.log("APIキーの読み込み:", apiKey);
+if (!apiKey) {
+  console.log("❌ エラー: APIキーが読み込めていません。.env.localを確認して再起動してください。");
+} else {
+  console.log("✅ APIキーは存在します (先頭: " + apiKey.substring(0, 4) + "...)");
+}
+
+const resend = new Resend(apiKey);
+
 const formSchema = z.object({
   username: z.string().min(1),
   email: z.string().email(),
@@ -14,18 +24,7 @@ const formSchema = z.object({
 });
 
 export async function sendContactEmail(formData: FormData) {
-  // 1. 関数が呼ばれた瞬間に環境変数を取得する
-  const apiKey = process.env.RESEND_API_KEY;
-
-  if (!apiKey) {
-    console.error("❌ エラー: RESEND_API_KEY が見つかりません。");
-    return { success: false, message: "サーバーの設定エラーです。" };
-  }
-
-  // 2. ここで初めて Resend を初期化する
-  const resend = new Resend(apiKey);
-
-  console.log("🚀 Server Action実行中...");
+  console.log("🚀 Server Actionが呼び出されました");
 
   const rawData = {
     username: formData.get('username'),
@@ -34,31 +33,62 @@ export async function sendContactEmail(formData: FormData) {
     message: formData.get('message'),
   };
 
+  // 受け取ったデータをログ表示
+  console.log("📩 受け取ったデータ:", rawData);
+
   const validatedFields = formSchema.safeParse(rawData);
+
   if (!validatedFields.success) {
-    return { success: false, errors: validatedFields.error.flatten().fieldErrors };
+    console.log("❌ バリデーションエラー:", validatedFields.error.flatten().fieldErrors);
+    return {
+      success: false,
+      errors: validatedFields.error.flatten().fieldErrors,
+    };
   }
 
   const { username, email, subject, message } = validatedFields.data;
 
   try {
+    console.log("📤 Resendに送信を試みます...");
+    
+    // メール送信実行
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev',
+      
+      // ↓↓↓ ここは絶対にご自身の登録メアドにしてください ↓↓↓
       to: ['suragi2196@gmail.com'], 
+      
       replyTo: email,
       subject: `【お問い合わせ】${subject}`,
-      react: React.createElement(EmailTemplate, { username, email, subject, message }),
+      
+      // JSXとして渡す
+      react: React.createElement(EmailTemplate, {
+        username,
+        email,
+        subject,
+        message,
+      }),
     });
 
     if (error) {
+      // Resend側から返ってきた詳細なエラーを表示
       console.error("❌ Resend API エラー:", error);
-      return { success: false, message: error.message };
+      return { success: false, message: `Resendエラー: ${error.message}` };
     }
 
+    console.log("✅ 送信成功！ ID:", data?.id);
     return { success: true, message: '送信に成功しました！' };
 
-  } catch (err) {
+  }  catch (err) { // 型を書かない（自動的に unknown になります）、または err: unknown とする
     console.error("❌ 予期せぬサーバーエラー:", err);
-    return { success: false, message: "予期せぬエラーが発生しました。" };
+
+    let errorMessage = "サーバーエラーが発生しました";
+    
+    // エラーが Error オブジェクトかどうかチェックしてから message を取り出す
+    if (err instanceof Error) {
+      errorMessage = `サーバーエラー: ${err.message}`;
+    }
+
+    return { success: false, message: errorMessage };
   }
 }
