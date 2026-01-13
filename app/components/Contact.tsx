@@ -23,8 +23,7 @@ export default function Contact() {
 
  const {register,
         handleSubmit,
-        reset,
-        formState:{errors},        
+        reset,        
        }=useForm<FormValues>({
         resolver:zodResolver(formSchema),
        });
