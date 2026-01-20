@@ -1,6 +1,5 @@
 
 import { Nsong } from "@/information";
-import Link from "next/link";
 export default function NewSong() {
     return (
         <section id="newSong" className="py-20 px-4 max-w-5xl mx-auto">
