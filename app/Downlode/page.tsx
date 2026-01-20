@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Dowlode() {
     // 方法B: fetchを使用した強制ダウンロード関数
@@ -67,9 +68,10 @@ export default function Dowlode() {
                             <div className="flex flex-col md:flex-row md:items-center border border-white/10 bg-white/5 p-4 gap-6 rounded-lg overflow-hidden">
                                 {/* 画像エリア */}
                                 <div className="w-full md:w-60 aspect-video relative overflow-hidden flex-shrink-0">
-                                    <img
+                                    <Image
                                         src={item.img}
                                         alt={item.title}
+                                        fill
                                         className="object-cover w-full h-full"
                                     />
                                 </div>

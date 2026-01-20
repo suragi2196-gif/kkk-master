@@ -3,7 +3,7 @@
 import { Dsong } from "@/information";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image";
 export default function Dowlode() {
     // ダウンロードを実行する関数
     const handleDownload = async (url: string) => {
@@ -67,7 +67,8 @@ export default function Dowlode() {
                                 <div className="flex flex-col md:flex-row md:items-center border border-white/10 bg-white/5 p-4 gap-6 rounded-lg overflow-hidden">
                                     {/* 画像エリア */}
                                     <div className="w-full md:w-60 aspect-video relative overflow-hidden flex-shrink-0">
-                                        <img
+                                        <Image
+                                            fill
                                             src={item.img}
                                             alt={item.title}
                                             className="object-cover w-full h-full"
