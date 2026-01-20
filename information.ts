@@ -161,7 +161,7 @@ export const Nsong = [
     img: "/oga0.png",
     data: "2026/1/1",
     title: "test",
-    url: "https://whgoz5pgeftixsdy.public.blob.vercel-storage.com/%E9%A2%A8%E6%87%90%E5%AE%8C%E6%88%90_1.mp4"
+    url: "https://pub-91f84e3b373540c9a975ad566872dcb1.r2.dev/%E3%80%90Reincarnation%E3%80%91.mp4"
   },
 ]
 
