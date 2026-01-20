@@ -1,7 +1,7 @@
 import { Song, NewsDate } from "./types"
 
 
-//Youtubeの曲を以下の形式で追加していく。
+//Youtubeの曲を以下の形式で追加していく。スライダー
 export const Songs: Song[] = [
   {
     id: '1',
@@ -36,6 +36,12 @@ export const Songs: Song[] = [
   {
     id: '6',
     img: "/oga555.png",
+    title: "曲名",
+    url: "https://youtu.be/gJzAp-_dxc4?si=HOvpBBxBPfSm8vMw"
+  },
+  {
+    id: '7',
+    img: "/suragi1.png",
     title: "曲名",
     url: "https://youtu.be/gJzAp-_dxc4?si=HOvpBBxBPfSm8vMw"
   },
@@ -158,7 +164,6 @@ export const media = [
 export const Nsong = [
   {
     id: '1',
-    img: "/oga0.png",
     data: "2026/1/1",
     title: "test",
     url: "https://pub-91f84e3b373540c9a975ad566872dcb1.r2.dev/%E3%80%90Reincarnation%E3%80%91.mp4"
@@ -228,6 +233,15 @@ export const Dsong = [
     img: "/oga0.png",
     title: "test", 
     mix: "https://pub-91f84e3b373540c9a975ad566872dcb1.r2.dev/E.Gt_side_2.wav",
+    master: "https://pub-91f84e3b373540c9a975ad566872dcb1.r2.dev/E.Gt_side_2.wav",
+    mix_file:"mank.wav",
+    master_file:"master.wav"
+  },
+  {
+    id: '8',
+    img: "/shiro1.png",
+    title: "test", 
+    mix: "https://pub-91f84e3b373540c9a975ad566872dcb1.r2.dev/anisonoff.wav",
     master: "https://pub-91f84e3b373540c9a975ad566872dcb1.r2.dev/E.Gt_side_2.wav",
     mix_file:"mank.wav",
     master_file:"master.wav"
