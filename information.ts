@@ -50,7 +50,7 @@ export const Songs: Song[] = [
 
 //記事の内容を以下の形式で記述する
 export const NewsDates: NewsDate[] = [
-  { id: 1, date: '2010/11/3', content: "記事内容" },
+  { id: 1, date: '2010/11/3', content: "記事容" },
   { id: 2, date: '2020/11/3', content: "記事内容" },
   { id: 3, date: '2030/11/3', content: "記事内容" },
   { id: 4, date: '2020/11/3', content: "記事内容" },
