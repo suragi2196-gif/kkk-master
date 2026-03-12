@@ -165,8 +165,8 @@ export const Dsong = [
     id: '1',
     img: "/01naito.png",
     title: "ナイトノイズン",
-    mix:  "http://suragi.verse.jp/nightnoisen_offvocal.mp3",
-    master: "http://suragi.verse.jp/nightnoisen_offvocal.mp3",
+    mix:  "https://suragi.verse.jp/nightnoisen_offvocal.mp3",
+    master: "https://suragi.verse.jp/nightnoisen_offvocal.mp3",
     mix_file:"mank.wav",
     master_file:"master.wav"
   },
