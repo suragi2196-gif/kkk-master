@@ -155,7 +155,7 @@ export const Nsong = [
     id: '1',
     data: "2026/1/1",
     title: "Dialectic",
-    url: "	https//suragi.verse.jp/Dialec.mp4",
+    url: "	http//suragi.verse.jp/Dialec.mp4",
   },
 ]
 
