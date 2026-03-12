@@ -13,8 +13,8 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "Suragi Official",
+  description: "このサイトは、ボカロP「suragi」の公式サイトです。これまでに投稿したボカロ楽曲のoffボーカルのダウンロードや、楽曲制作などの各種ご依頼を受け付けています。",
 };
 
 export default function RootLayout({
