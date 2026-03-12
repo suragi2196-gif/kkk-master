@@ -117,7 +117,7 @@ export default function Kiyaku() {
                                 個人情報の取扱いに関するお問い合わせは、以下の窓口までお願いいたします。
                             </p>
                             <address className="not-italic">
-                                <p>Suragi</p>
+                            
                                 <p>お問い合わせフォーム、またはSNSのDMよりご連絡ください。</p>
                             </address>
                         </section>

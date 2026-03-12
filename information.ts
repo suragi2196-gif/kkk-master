@@ -50,17 +50,17 @@ export const Songs: Song[] = [
 
 //記事の内容を以下の形式で記述する
 export const NewsDates: NewsDate[] = [
-  { id: 1, date: '2010/11/3', content: "記事容" },
-  { id: 2, date: '2020/11/3', content: "記事内容" },
-  { id: 3, date: '2030/11/3', content: "記事内容" },
-  { id: 4, date: '2020/11/3', content: "記事内容" },
-  { id: 5, date: '2020/11/3', content: "記事内容" },
-  { id: 6, date: '2020/11/3', content: "記事内容" },
-  { id: 7, date: '2020/11/3', content: "記事内容" },
-  { id: 8, date: '2020/11/3', content: "記事内容" },
-  { id: 9, date: '2020/11/3', content: "記事内容" },
-  { id: 10, date: '2020/11/3', content: "記事内容" },
-  { id: 11, date: '2020/11/3', content: "wwwwww" },
+  { id: 1, date: '2026/0/0', content: "" },
+  { id: 2, date: '2026/0/0', content: "" },
+  { id: 3, date: '2026/0/0', content: "" },
+  { id: 4, date: '2026/0/0', content: "" },
+  { id: 5, date: '2026/0/0', content: "" },
+  { id: 6, date: '2026/0/0', content: "" },
+  { id: 7, date: '2026/0/0', content: "" },
+  { id: 8, date: '2026/0/0', content: "" },
+  { id: 9, date: '2026/2/20', content: "サブスク配信開始" },
+  { id: 10, date: '2026/2/21', content: "新曲【Dialectic】公開" },
+  { id: 11, date: '2026/3/15', content: "officialサイト公開" },
 ]
 
 
@@ -146,6 +146,12 @@ export const media = [
     url: "https://open.spotify.com/intl-ja/artist/3lhpdkU29iCZtGEC857EIh?si=bMAXZIQcTkuz84rwG_k8kw",
     name: 'Spotify',
     img: '/spotify-log.png'
+  },
+  {
+    id: 'niconico',
+    url: "https://www.nicovideo.jp/user/118085319",
+    name: 'niconico',
+    img: '/ncnc.png'
   }
 ]
 
@@ -153,9 +159,9 @@ export const media = [
 export const Nsong = [
   {
     id: '1',
-    data: "2026/1/1",
+    data: "2026/2/21",
     title: "Dialectic",
-    url: "	https://suragi.verse.jp/Dialec.mp4",
+    url: "https://suragi.verse.jp/Dialecticweb.mp4",
   },
 ]
 
@@ -348,7 +354,7 @@ export const Dsong = [
   {
     id: '23',
     img: "/23diale.png",
-    title: "Dialectic.", 
+    title: "Dialectic", 
     mix: "https://suragi.verse.jp/Dialectic_offvocal2mix.wav",
     master: "https://suragi.verse.jp/Dialectic_offvocal.wav",
     mix_file:"mank.wav",

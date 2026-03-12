@@ -48,7 +48,8 @@ export default function Dowlode() {
                         <p className="text-gray-300 leading-relaxed text-sm md:text-base mb-8">
                             いつもsuragiを応援頂きありがとうございます。<br className="hidden md:block" />
                             皆様に作品を楽しんで頂くために以下に利用規約を公開しています。<br className="hidden md:block" />
-                            規約に同意した後に作品をご利用頂くようお願い申し上げます。
+                            規約に同意した後に作品をご利用頂くようお願い申し上げます。<br className="hidden md:block" />
+                            <br className="hidden md:block" />※ダウンロードに時間がかかる楽曲があります。ダウンロードが開始されるまでお待ちください。
                         </p>
                         <Link href="/kiyaku" target="_blank">
                             <Button className="w-full md:w-auto px-8 py-6 text-base" variant="secondary">
