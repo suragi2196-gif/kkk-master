@@ -1,4 +1,4 @@
-
+import { Metadata } from 'next'
 import Header from "./components/Header";
 import News from "./components/News";
 import Contact from "./components/Contact";
@@ -10,7 +10,12 @@ import ProfileCard from "./components/Profile";
 import NewSong from "./components/NewSong";
 import Downlode from "./components/Downlode";
 
-
+export const metadata: Metadata = {
+  // 検索結果のタイトルになる
+  title: 'Suragi offical',
+  // 検索結果の説明文（スニペット）になる
+  description: 'このサイトは、ボカロP「suragi」の公式サイトです。これまでに投稿したボカロ楽曲のoffボーカルのダウンロードや、楽曲制作などの各種ご依頼を受け付けています。',
+}
 
 
 export default function Home() {

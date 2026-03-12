@@ -18,23 +18,22 @@ export default function ProfileCard() {
             SURAGI
           </h3>
           <p className="text-blue-500 font-bold tracking-widest uppercase text-sm">
-            クリエイーター / アーティスト
+            クリエイター / アーティスト
           </p>
         </div>
 
         {/* 紹介文本文 */}
         <div className="text-gray-300 leading-8 text-base md:text-lg font-light">
           <p className="mb-6">
-            はじめまして。楽曲制作を中心に活動しているクリエイターです。
-            主にダークでエモーショナルな世界観の楽曲を得意としています。
+            はじめまして。ボカロ楽曲制作を中心にいるクリエイターです。
+            主にダーク世界観やエモーショナルな楽曲を得意としています。
           </p>
           <p className="mb-6">
             ご依頼主様の持つイメージや物語を音として具現化し、聴く人の心に残るサウンドメイクを心がけています。
             ボーカル曲の制作からBGM、MIX・マスタリングまで、音に関することなら幅広く対応可能です。
           </p>
           <p>
-            新しい表現への挑戦を常に続けています。制作のご相談やコラボレーションのご提案など、
-            お問い合わせフォームよりお気軽にご連絡ください。
+            制作のご相談などは合わせフォームよりお気軽にご連絡ください。
           </p>
         </div>
 
