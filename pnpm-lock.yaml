@@ -65,6 +65,9 @@ importers:
       lucide-react:
         specifier: ^0.555.0
         version: 0.555.0(react@19.2.3)
+      metadata:
+        specifier: ^0.1.0
+        version: 0.1.0
       nanoid:
         specifier: ^5.1.6
         version: 5.1.6
@@ -3443,6 +3446,10 @@ packages:
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
+
+  metadata@0.1.0:
+    resolution: {integrity: sha512-CF/UzP5jYPxcroilbn2x71L7vZaVCL606ZdclY2XR+WxcjyTH2TRlEHuHG0tNnWRhACpg3KQrrqCOakluKyG6w==}
+    engines: {node: '>= 0.8.0'}
 
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
@@ -7809,6 +7816,8 @@ snapshots:
   math-intrinsics@1.1.0: {}
 
   merge2@1.4.1: {}
+
+  metadata@0.1.0: {}
 
   micromatch@4.0.8:
     dependencies:
