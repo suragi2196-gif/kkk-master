@@ -15,7 +15,7 @@ export default function Top() {
       <div className="absolute inset-0 bg-black/30 -z-10"></div>
       <div className="z-10 px-4">
         <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-wide mb-4 font-heading uppercase">
-          Suragi
+          Suragi official
         </h1>
         <p className="text-lg md:text-2xl font-bold tracking-[0.2em] md:tracking-[0.5em]">
           Official Page
