@@ -10,7 +10,7 @@ export default function Header() {
         <header className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-sm text-white border-b border-white/10">
             <div className="container mx-auto px-4 h-20 flex items-center justify-between">
                 <Link href="/" className="text-2xl font-bold tracking-widest uppercase font-heading">
-                    Suragi
+                    Suragi Official
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wider">
